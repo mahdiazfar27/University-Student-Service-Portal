@@ -1,6 +1,6 @@
 # Project Proposal
 
-# Project Name : *University-Academic-Management-System-Database*
+# Project Name : *University-Student-Service-Portal*
 
 ---
 
@@ -17,7 +17,7 @@
 ## Project Overview
 
 ### Objective  
-The **University Academic Management System (UAMS)** is a web-based platform designed to manage and automate academic operations of a university.
+The **University Student Service Portal (USSP)** is a web-based platform designed to manage and automate academic operations of a university.
 The system aims to replace traditional manual processes with a **centralized digital solution** for handling student records, courses, results, and academic activities.
 By providing role-based access for administrators, teachers, and students, UAMS ensures **accuracy, efficiency, transparency, and data security**.
 The project focuses on improving academic workflow management and reducing administrative overhead.
