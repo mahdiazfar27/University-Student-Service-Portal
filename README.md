@@ -9,8 +9,8 @@
 | Roll Number |      Name           |        Email                     |            Role           |
 |-------------|---------------------|----------------------------------|---------------------------|
 | 20230104087 | Redowan Imran Sarker| redowan.cse.20230104087@aust.edu | Frontend Developer        |
-| 20230104088 | Imam Hasan Rupam    | imam.cse.20230104086@aust.edu    | Backend Developer         |
-| 20230104094 | Mahdi Azfar Talukder| mahdi.cse.202301040100@aust.edu  | Lead & Backend Developer  |  
+| 20230104086 | Imam Hasan Rupam    | imam.cse.20230104086@aust.edu    | Backend Developer         |
+| 202301040100| Mahdi Azfar Talukder| mahdi.cse.202301040100@aust.edu  | Lead & Backend Developer  |  
 
 
 ---
