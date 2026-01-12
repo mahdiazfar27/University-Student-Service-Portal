@@ -1,6 +1,6 @@
 # Project Proposal
 
-# Project Name : *CampusMart*
+# Project Name : *University-Academic-Management-System-Database*
 
 ---
 
