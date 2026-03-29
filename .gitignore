@@ -1,0 +1,35 @@
+# 1. Environment Variables Ensure
+.env
+.env.*
+server/.env
+
+# 2. Node & Composer Modules
+node_modules/
+client/node_modules/
+server/node_modules/
+server/vendor/
+vendor/
+
+# 3. SQLite Databases
+*.sqlite
+*.db
+database/database.sqlite
+server/database/database.sqlite
+
+# 4. Laravel Specific (Storage, Logs, IDE helpers)
+server/storage/*.key
+server/storage/framework/cache/
+server/storage/framework/sessions/
+server/storage/framework/testing/
+server/storage/framework/views/
+server/storage/logs/
+server/.phpunit.cache
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php
+
+# 5. Build outputs & IDE settings
+client/dist/
+server/public/build/
+.vscode/
+.idea/
