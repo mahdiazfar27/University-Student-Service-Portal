@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1e3a8a;
+  --secondary: #10b981;
+}
+
+body {
+  @apply font-sans antialiased bg-slate-50 text-slate-900;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20;
+  }
+  
+  .premium-card {
+    @apply bg-white rounded-[2rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-slate-300/50 transition-all duration-500 overflow-hidden;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-navy-900 via-navy-700 to-indigo-500;
+  }
+
+  .btn-premium {
+    @apply bg-navy-900 text-white rounded-2xl font-black transition-all hover:bg-navy-800 active:scale-95 shadow-lg shadow-navy-900/10 flex items-center justify-center gap-2;
+  }
+}
