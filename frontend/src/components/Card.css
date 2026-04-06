@@ -1,0 +1,98 @@
+/* ============================================
+   CARD COMPONENT STYLES
+   ============================================ */
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .card {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* CARD HEADER */
+.card-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+body.dark-mode .card-header {
+  border-bottom-color: #334155;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2c3e50;
+}
+
+body.dark-mode .card-title {
+  color: #ecf0f1;
+}
+
+.card-subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0.5rem 0 0 0;
+}
+
+body.dark-mode .card-subtitle {
+  color: #999;
+}
+
+/* CARD BODY */
+.card-body {
+  padding: 1.5rem;
+}
+
+/* CARD VARIANTS */
+
+.card.card-border {
+  border: 1px solid #e5e7eb;
+  box-shadow: none;
+}
+
+body.dark-mode .card.card-border {
+  border-color: #334155;
+}
+
+.card.card-elevated {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .card.card-elevated {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 6px;
+  }
+
+  .card-header {
+    padding: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}

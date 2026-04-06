@@ -1,0 +1,175 @@
+/* ============================================
+   GRADES PAGE STYLES
+   ============================================ */
+
+.grades-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f5f7fa;
+}
+
+body.dark-mode .grades-page {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+body.dark-mode .page-header h1 {
+  color: #ecf0f1;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+body.dark-mode .page-header p {
+  color: #999;
+}
+
+.error-card {
+  background: #f8d7da;
+  border-left: 4px solid #e74c3c;
+  margin-bottom: 2rem;
+  color: #721c24;
+}
+
+body.dark-mode .error-card {
+  background: #3a1f2c;
+  border-left-color: #f87171;
+  color: #f87171;
+}
+
+.grades-card {
+  margin-bottom: 2rem;
+}
+
+.semester-grades {
+  padding: 1rem 0;
+}
+
+.gpa-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+body.dark-mode .gpa-overview {
+  border-bottom-color: #334155;
+}
+
+.gpa-stat {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+.gpa-label {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.gpa-value {
+  margin: 0.5rem 0 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.empty-state p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.stats-card {
+  margin-top: 2rem;
+}
+
+.overall-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.stat-box {
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  text-align: center;
+}
+
+body.dark-mode .stat-box {
+  background: #0f172a;
+  border-left-color: #a5b4fc;
+}
+
+.stat-box h4 {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+body.dark-mode .stat-box h4 {
+  color: #999;
+}
+
+.stat-value {
+  margin: 0.75rem 0 0 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+body.dark-mode .stat-value {
+  color: #a5b4fc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grades-page {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .gpa-overview,
+  .overall-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gpa-stat {
+    padding: 1rem;
+  }
+
+  .gpa-value {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,153 @@
+/* ============================================
+   COURSES PAGE STYLES
+   ============================================ */
+
+.courses-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f5f7fa;
+}
+
+body.dark-mode .courses-page {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+body.dark-mode .page-header h1 {
+  color: #ecf0f1;
+}
+
+.semester-info {
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body.dark-mode .semester-info {
+  color: #a5b4fc;
+}
+
+.error-card {
+  background: #f8d7da;
+  border-left: 4px solid #e74c3c;
+  margin-bottom: 2rem;
+}
+
+body.dark-mode .error-card {
+  background: #3a1f2c;
+  border-left-color: #f87171;
+}
+
+.error-message {
+  color: #721c24;
+  margin-bottom: 1rem;
+}
+
+body.dark-mode .error-message {
+  color: #f87171;
+}
+
+.courses-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+body.dark-mode .courses-container {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.capacity-info {
+  margin: 0;
+  color: #666;
+  font-weight: 500;
+}
+
+body.dark-mode .capacity-info {
+  color: #999;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.empty-state p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.enrollments-card {
+  margin-top: 2rem;
+}
+
+.enrollment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enrollment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 3px solid #667eea;
+}
+
+body.dark-mode .enrollment-item {
+  background: #0f172a;
+  border-left-color: #a5b4fc;
+}
+
+.enrollment-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+body.dark-mode .enrollment-info h4 {
+  color: #ecf0f1;
+}
+
+.enrollment-info p {
+  margin: 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .courses-page {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .courses-container {
+    padding: 1rem;
+  }
+
+  .enrollment-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}

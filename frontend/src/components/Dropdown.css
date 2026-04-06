@@ -1,0 +1,120 @@
+/* ============================================
+   DROPDOWN COMPONENT STYLES
+   ============================================ */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  padding: 0.5rem 0;
+  animation: slideDown 0.2s ease;
+}
+
+body.dark-mode .dropdown-menu {
+  background: #1e293b;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* PLACEMENT VARIANTS */
+.dropdown-bottom {
+  top: calc(100% + 0.5rem);
+  left: 0;
+}
+
+.dropdown-top {
+  bottom: calc(100% + 0.5rem);
+  left: 0;
+}
+
+.dropdown-left {
+  right: calc(100% + 0.5rem);
+  top: 0;
+}
+
+.dropdown-right {
+  left: calc(100% + 0.5rem);
+  top: 0;
+}
+
+/* DROPDOWN CONTENT */
+.dropdown-content {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* DROPDOWN ITEMS */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  color: #2c3e50;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+body.dark-mode .dropdown-item {
+  color: #ecf0f1;
+}
+
+.dropdown-item:hover:not(:disabled) {
+  background: #f3f4f6;
+}
+
+body.dark-mode .dropdown-item:hover:not(:disabled) {
+  background: #334155;
+}
+
+.dropdown-item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* DROPDOWN DIVIDER */
+.dropdown-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+body.dark-mode .dropdown-divider {
+  background: #334155;
+}
+
+/* DROPDOWN MENU WRAPPER */
+.dropdown-menu-wrapper {
+  all: unset;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: 150px;
+    padding: 0.4rem 0;
+  }
+
+  .dropdown-item {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .dropdown-content {
+    max-height: 300px;
+  }
+}

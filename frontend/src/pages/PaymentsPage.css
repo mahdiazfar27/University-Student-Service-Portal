@@ -1,0 +1,379 @@
+/* ============================================
+   PAYMENTS PAGE STYLES
+   ============================================ */
+
+.payments-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f5f7fa;
+}
+
+body.dark-mode .payments-page {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.page-header {
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+body.dark-mode .page-header h1 {
+  color: #ecf0f1;
+}
+
+.page-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+body.dark-mode .page-header p {
+  color: #999;
+}
+
+/* Summary Cards */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .summary-card {
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .summary-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.summary-content {
+  padding: 2rem;
+}
+
+.summary-content h3 {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+body.dark-mode .summary-content h3 {
+  color: #999;
+}
+
+.amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #667eea;
+}
+
+body.dark-mode .amount {
+  color: #a5b4fc;
+}
+
+.amount.total-fees {
+  color: #667eea;
+}
+
+body.dark-mode .amount.total-fees {
+  color: #a5b4fc;
+}
+
+.amount.total-paid {
+  color: #27ae60;
+}
+
+body.dark-mode .amount.total-paid {
+  color: #4ade80;
+}
+
+.amount.outstanding {
+  color: #e74c3c;
+}
+
+body.dark-mode .amount.outstanding {
+  color: #f87171;
+}
+
+.amount.cleared {
+  color: #27ae60;
+}
+
+body.dark-mode .amount.cleared {
+  color: #4ade80;
+}
+
+/* Breakdown Card */
+.breakdown-card {
+  margin-bottom: 2rem;
+}
+
+.breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .breakdown-item {
+  background: #0f172a;
+  border-left-color: #a5b4fc;
+}
+
+.breakdown-item:hover {
+  background: #f0f4f8;
+  transform: translateX(4px);
+}
+
+body.dark-mode .breakdown-item:hover {
+  background: #1e293b;
+}
+
+.breakdown-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fee-type {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+body.dark-mode .fee-type {
+  color: #ecf0f1;
+}
+
+.fee-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+body.dark-mode .fee-date {
+  color: #666;
+}
+
+.breakdown-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.breakdown-amount strong {
+  color: #667eea;
+  font-size: 1.25rem;
+}
+
+body.dark-mode .breakdown-amount strong {
+  color: #a5b4fc;
+}
+
+/* Cards */
+.payments-card,
+.fees-card {
+  margin-bottom: 2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  margin: 0;
+}
+
+body.dark-mode .empty-message {
+  color: #666;
+}
+
+.transaction-id {
+  background: #f0f4f8;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #667eea;
+  font-family: 'Courier New', monospace;
+}
+
+body.dark-mode .transaction-id {
+  background: #1a1a2e;
+  color: #a5b4fc;
+}
+
+.method-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #f0f4f8;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+body.dark-mode .method-badge {
+  background: #0f172a;
+  color: #ecf0f1;
+}
+
+/* All Paid State */
+.all-paid {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.checkmark {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #27ae60;
+  margin-bottom: 1rem;
+  animation: scaleIn 0.4s ease-out;
+}
+
+body.dark-mode .checkmark {
+  color: #4ade80;
+}
+
+.all-paid p {
+  font-size: 1.2rem;
+  color: #27ae60;
+  font-weight: 600;
+  margin: 0;
+}
+
+body.dark-mode .all-paid p {
+  color: #4ade80;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Actions */
+.payment-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.payment-actions button {
+  min-width: 150px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .payments-page {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .summary-content {
+    padding: 1.5rem;
+  }
+
+  .amount {
+    font-size: 2rem;
+  }
+
+  .breakdown-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .breakdown-amount {
+    align-items: flex-start;
+  }
+
+  .table-wrapper {
+    font-size: 0.9rem;
+  }
+
+  .payment-actions {
+    flex-direction: column;
+  }
+
+  .payment-actions button {
+    width: 100%;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .payments-page {
+    background: white;
+  }
+
+  .page-header {
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .payment-actions {
+    display: none;
+  }
+
+  .summary-card {
+    page-break-inside: avoid;
+  }
+
+  .table-wrapper {
+    page-break-inside: avoid;
+  }
+}

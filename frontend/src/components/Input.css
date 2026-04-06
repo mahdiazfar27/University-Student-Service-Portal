@@ -1,0 +1,146 @@
+/* ============================================
+   INPUT COMPONENT STYLES
+   ============================================ */
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+body.dark-mode .input-label {
+  color: #ecf0f1;
+}
+
+.required-indicator {
+  color: #e74c3c;
+  margin-left: 0.25rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper.has-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #667eea;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d0d7e2;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.input-wrapper.has-icon .input-field {
+  padding-left: 2.75rem;
+}
+
+body.dark-mode .input-field {
+  background: #1e293b;
+  border-color: #334155;
+  color: #ecf0f1;
+}
+
+.input-field::placeholder {
+  color: #999;
+}
+
+body.dark-mode .input-field::placeholder {
+  color: #666;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  background-color: #f8f9ff;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+body.dark-mode .input-field:focus {
+  background-color: #0f172a;
+}
+
+.input-field:disabled {
+  background: #f5f7fa;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+body.dark-mode .input-field:disabled {
+  background: #0f172a;
+  color: #666;
+}
+
+/* ERROR STATE */
+.input-wrapper.has-error .input-field {
+  border-color: #e74c3c;
+}
+
+.input-wrapper.has-error .input-field:focus {
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.input-error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.input-helper {
+  color: #666;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+body.dark-mode .input-helper {
+  color: #999;
+}
+
+/* TEXTAREA */
+textarea.input-field {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-label {
+    font-size: 0.9rem;
+  }
+
+  .input-field {
+    min-height: 44px;
+  }
+}
